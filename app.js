@@ -12,7 +12,7 @@ window.addEventListener("load" , () =>{
         // console.log("submit form") just for checking purpose
 
         const task = input.value;
-        if(!task || task==null || task.length > 0){
+        if(!task || task.match(/^\s*$/)){
             alert("Please fill out the task first!")
             return;
         }
